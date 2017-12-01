@@ -78,6 +78,3 @@ class Elfeal < Sinatra::Base
 end
 
 Elfeal.run!
-#binding.pry
-
-#puts "a"
