@@ -1,0 +1,4 @@
+*.pyc
+/.bundle
+/vendor/bundle
+.idea
