@@ -59,7 +59,7 @@ class Elfeal < Sinatra::Base
     out_file.puts(verb['q'].split('-').join("\t"))
     out_file.close
 
-    conjugado = ` ./lib/conjugate.py -f #{session.id} -#{@opt['tense'][tense]['q']} `
+    conjugado = ` ./lib/qutrub/conjugate.py -f #{session.id} -#{@opt['tense'][tense]['q']} `
     line = conjugado.split("\n")[index(person, number) + 5]
     @resultado = if @opt['tense'][tense]['q'] != 'm'
                    line
