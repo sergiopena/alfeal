@@ -1,4 +1,5 @@
 *.pyc
 /.bundle
 /vendor/bundle
+.byebug_history
 .idea
